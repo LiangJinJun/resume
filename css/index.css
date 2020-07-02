@@ -1,0 +1,280 @@
+.container {
+    max-width: 210mm;
+    min-height: 297mm;
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.15);
+    color: #3f1c1c;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+body {
+    line-height: 1.5;
+}
+
+section {
+    display: block;
+}
+
+h1 {
+    margin-left: -20px;
+    padding-left: 15px;
+    border-left: 5px solid blue;
+}
+
+.boxes {
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+}
+
+.box>p {
+    padding: 10px 15px;
+    display: block;
+    font-size: 15px;
+    flex: 1;
+    max-width: 100%;
+}
+
+.box>img {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+.time>p {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+.time>p span:first-child {
+    flex: 1;
+}
+
+.time>p span:nth-child(2),
+.time>p span:nth-child(3) {
+    flex: 1;
+}
+
+.dis {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
+}
+
+.uls {
+    /* padding: 50px 15px; */
+    flex: 1;
+    /* max-width: 50%; */
+}
+
+.uls>li {
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+#hello {
+    flex: 1;
+    width: 500px;
+    height: 270px;
+    /* justify-content: center;
+    align-items: center; */
+    /* max-width: 50%; */
+}
+
+@media print {
+    #hello {
+        display: none;
+    }
+}
+
+.ols>li {
+    margin-bottom: 24px;
+    color: #666;
+    padding-left: 1em;
+}
+
+.ols>li>header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ols>li>header h3 {
+    width: 200px;
+    font-size: 18px;
+    color: #3f1c1c;
+}
+
+.ols>li span {
+    flex: 1;
+    text-align: center;
+}
+
+.ols>li span a:first-child {
+    margin-right: 2em;
+}
+
+.ols>li span a {
+    color: green;
+    border-bottom: 1px solid;
+}
+
+.ols>li p {
+    /* color: #666; */
+    color: #3f1c1c;
+    margin: 0.3em 0px;
+    font-size: 15px;
+}
+
+.ols>li strong {
+    color: #000;
+}
+
+.evaluate p {
+    padding: 10px 15px;
+}
+
+@media screen and (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        box-shadow: none;
+    }
+
+    /* section {} */
+}
+
+@media screen and (max-width:700px) {
+    body {
+        margin: 0;
+    }
+
+    .box {
+        padding-right: 115px;
+    }
+
+    .box p:nth-child(2) {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 15px;
+        /* flex-direction: column; */
+    }
+
+    .box>p:nth-child(2) span:first-child,
+    .box>p:nth-child(2) span:nth-child(2) {
+        flex: 1;
+        padding-bottom: 10px;
+    }
+
+    .box>p:nth-child(2) span:last-child {
+        flex: 100%;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .dis {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        /* position: relative; */
+    }
+
+    .dis>#hello {
+        justify-content: center;
+        align-items: center;
+        flex: none;
+    }
+
+    .dis>.uls {
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width:510px) {
+    .box p:nth-child(2) {
+        flex-direction: column;
+    }
+
+    .box p:nth-child(2) span {
+        flex: 100%;
+    }
+}
+
+@media screen and (max-width:400px) {
+
+    .time>p span:nth-child(2) {
+        flex: 1;
+        text-align: center;
+    }
+
+    .time>p span:first-child {
+        flex: none;
+    }
+
+}
+
+@media screen and (max-width:560px) {
+    .time>p span:nth-child(3) {
+        display: none;
+    }
+}
+
+@media screen and (max-width:480px) {
+    img {
+        display: none;
+    }
+
+    .box {
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .projects>.ols>li header {
+        flex-direction: column;
+    }
+
+    .projects>.ols>li header span {
+        text-align: left;
+        padding: 5px 0px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .bac {
+        background-color: transparent;
+    }
+}
