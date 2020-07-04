@@ -75,8 +75,13 @@ h1 {
     align-items: center;
 }
 
+.projects>.ols {
+    padding-right: 1em;
+}
+
 .uls {
     /* padding: 50px 15px; */
+    padding-right: 1em;
     flex: 1;
     /* max-width: 50%; */
 }
@@ -146,6 +151,7 @@ h1 {
 .evaluate p {
     padding: 10px 15px;
 }
+
 
 @media screen and (min-width:1200px) {
     .container {
