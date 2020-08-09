@@ -2,7 +2,7 @@
 
 ## 查看效果
 
- [点击预览](https://LiangJinJun.github.io/resume/index.html)
+ [点击预览](http://liangjinjun.gitee.io/resume/index.html)
  
 ## 介绍
 
