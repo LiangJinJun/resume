@@ -2,8 +2,8 @@
     max-width: 210mm;
     min-height: 297mm;
     background-color: #fff;
-    margin: 20px auto;
-    padding: 20px;
+    margin: 10px auto;
+    padding: 10PX 20PX 10PX 20px;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.15);
     color: #3f1c1c;
     font-size: 15px;
