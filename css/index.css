@@ -156,7 +156,7 @@ h1 {
     }
 
     .spans {
-        display: none;
+        /* display: none; */
     }
 }
 
