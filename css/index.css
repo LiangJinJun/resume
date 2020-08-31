@@ -2,7 +2,8 @@
     max-width: 210mm;
     min-height: 297mm;
     background-color: #fff;
-    margin: 10px auto;
+    /* margin: 10px auto; */
+    margin: 5px auto;
     padding: 10PX 20PX 10PX 20px;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.15);
     color: #3f1c1c;
@@ -203,7 +204,7 @@ h1 {
 }
 
 .evaluate p {
-    padding: 10px 15px;
+    padding: 5px 15px;
 }
 
 
