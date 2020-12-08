@@ -35,6 +35,11 @@ h1 {
     border-left: 5px solid blue;
 }
 
+hei {
+    color: #000;
+    font-weight: 900;
+}
+
 .boxes {
     border: 2px solid transparent;
     border-radius: 5px;
@@ -147,19 +152,7 @@ h1 {
     /* max-width: 50%; */
 }
 
-@media print {
-    #hello {
-        display: none;
-    }
 
-    .container {
-        box-shadow: none;
-    }
-
-    .spans {
-        /* display: none; */
-    }
-}
 
 .ols>li {
     margin-bottom: 5px;
@@ -208,10 +201,24 @@ h1 {
     color: #000;
 }
 
+
 .evaluate p {
     padding: 5px 15px;
 }
 
+@media print {
+    #hello {
+        display: none;
+    }
+
+    .container {
+        box-shadow: none;
+    }
+
+    .spans {
+        /* display: none; */
+    }
+}
 
 @media screen and (min-width:1200px) {
     .container {
