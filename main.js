@@ -22,23 +22,23 @@ option = {
         center: ['50%', '50%'],
         data: [{
                 value: 880,
-                name: '快速学习能力'
+                name: 'HTML/CSS'
             },
             {
                 value: 900,
-                name: '静态页面'
+                name: 'Vue'
             },
             {
                 value: 850,
-                name: '编程语言'
+                name: 'TypeScript'
             },
             {
                 value: 850,
-                name: '沟通能力'
+                name: 'jQuery'
             },
             {
                 value: 830,
-                name: 'UL设计'
+                name: 'AJAX'
             }
         ],
         emphasis: {
