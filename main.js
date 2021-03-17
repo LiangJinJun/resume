@@ -22,7 +22,7 @@ option = {
         center: ['50%', '50%'],
         data: [{
                 value: 880,
-                name: 'HTML/CSS'
+                name: 'Axios'
             },
             {
                 value: 900,
@@ -30,11 +30,11 @@ option = {
             },
             {
                 value: 850,
-                name: 'TypeScript'
+                name: 'UI组件库'
             },
             {
                 value: 850,
-                name: 'jQuery'
+                name: '小程序'
             },
             {
                 value: 830,
