@@ -4,7 +4,7 @@
     background-color: #fff;
     /* margin: 10px auto; */
     margin: 5px auto;
-    padding: 10PX 20PX 10PX 20px;
+    padding: 20px 20px 20px 20px;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.15);
     color: #3f1c1c;
     font-size: 15px;
@@ -138,12 +138,14 @@ hei {
 
 .projects>.ols {
     padding-right: 1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .uls {
-    /* padding: 50px 15px; */
-    padding-right: 1em;
-    padding-left: 1em;
+     padding: 1em 1em 1em  1em;
+    /*padding-right: 1em;*/
+    /*padding-left: 1em;*/
     flex: 1;
     /* max-width: 50%; */
 }
@@ -165,14 +167,17 @@ hei {
 
 
 .ols>li {
-    margin-bottom: 5px;
     color: #666;
     padding-left: 1em;
+}
+.ols>li:not(:last-child) {
+    margin-bottom: 18px;
 }
 
 .ols>li>header {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 8px;
 }
 
 .ols>li>header h3 {
@@ -217,8 +222,7 @@ hei {
 }
 
 .work {
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 10px 1em 10px 1em ;
 }
 
 .work header .work-header {
@@ -375,10 +379,13 @@ hei {
         flex: none;
     }
 
+
+
     .projects>.ols>li>header>.spans {
         text-align: left;
     }
-}
+
+
 
 @media screen and (max-width:385px) {
     .time>p:first-child {
