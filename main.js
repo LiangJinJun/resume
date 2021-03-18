@@ -22,7 +22,7 @@ option = {
         center: ['50%', '50%'],
         data: [{
                 value: 880,
-                name: 'Axios'
+                name: 'PC/H5'
             },
             {
                 value: 900,
