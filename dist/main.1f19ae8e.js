@@ -141,16 +141,16 @@ option = {
     center: ['50%', '50%'],
     data: [{
       value: 880,
-      name: 'HTML/CSS'
+      name: 'PC/H5'
     }, {
       value: 900,
       name: 'Vue'
     }, {
       value: 850,
-      name: 'TypeScript'
+      name: 'UI组件库'
     }, {
       value: 850,
-      name: 'jQuery'
+      name: '小程序'
     }, {
       value: 830,
       name: 'AJAX'
@@ -194,7 +194,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50632" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59082" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

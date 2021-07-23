@@ -4,7 +4,7 @@
     background-color: #fff;
     /* margin: 10px auto; */
     margin: 5px auto;
-    padding: 10PX 20PX 10PX 20px;
+    padding: 20px 20px 20px 20px;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.15);
     color: #3f1c1c;
     font-size: 15px;
@@ -108,15 +108,25 @@ hei {
     flex-wrap: wrap;
     padding: 5px 15px;
     font-size: 15px;
+    /* justify-content: space-between; */
 }
 
 .time>p span:first-child {
     flex: 1;
 }
 
-.time>p span:nth-child(2),
+
 .time>p span:nth-child(3) {
     flex: 1;
+    text-align: right;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.time>p span:nth-child(2) {
+    text-align: left;
+    flex: 1;
+    padding-left: 100px;
 }
 
 .dis {
@@ -128,12 +138,14 @@ hei {
 
 .projects>.ols {
     padding-right: 1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .uls {
-    /* padding: 50px 15px; */
-    padding-right: 1em;
-    padding-left: 1em;
+     padding: 1em 1em 1em  1em;
+    /*padding-right: 1em;*/
+    /*padding-left: 1em;*/
     flex: 1;
     /* max-width: 50%; */
 }
@@ -155,18 +167,21 @@ hei {
 
 
 .ols>li {
-    margin-bottom: 5px;
     color: #666;
     padding-left: 1em;
+}
+.ols>li:not(:last-child) {
+    margin-bottom: 18px;
 }
 
 .ols>li>header {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 8px;
 }
 
 .ols>li>header h3 {
-    width: 200px;
+    width: 330px;
     font-size: 18px;
     color: #3f1c1c;
 }
@@ -206,6 +221,30 @@ hei {
     padding: 5px 15px;
 }
 
+.work {
+    padding: 10px 1em 10px 1em ;
+}
+
+.work header:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.work header .work-header {
+    display: flex;
+}
+
+.work header .work-header h3 {
+    margin-right: 2em;
+    font-size: 18px;
+    color: #333;
+}
+
+.work header .work-info p {
+    margin: 0.3em 0px;
+    font-size: 15px;
+}
+
+
 @media print {
     #hello {
         display: none;
@@ -216,7 +255,7 @@ hei {
     }
 
     .spans {
-         display: none;
+        display: none;
     }
 }
 
@@ -331,47 +370,97 @@ hei {
 }
 
 @media screen and (max-width:560px) {
-    .time>p span:nth-child(3) {
-        display: none;
-    }
-}
-
-@media screen and (max-width:480px) {
-    img {
-        /* display: none; */
+    .time > p {
+        display: flex;
+        justify-content: space-between;
     }
 
-    .box {
-        padding-right: 0px;
+    .time > p > span:nth-child(2) {
+        padding: 0;
     }
 
-    .back {
-        display: block;
+    .time > p > span:last-child {
+        flex: none;
     }
 
-    .box>div {
-        top: -126px;
-        color: #666;
-        /* right: 0px; */
-        left: 28%;
-    }
-}
 
-@media screen and (max-width:430px) {
-    .projects>.ols>li header {
-        flex-direction: column;
-    }
-
-    .projects>.ols>li header span {
+    .projects > .ols > li > header > .spans {
         text-align: left;
-        padding: 5px 0px;
+    }
+
+
+    @media screen and (max-width: 385px) {
+        .time > p:first-child {
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .time > p > span:last-child {
+            /* display: none; */
+            text-align: left;
+        }
+
+        .time > p > span:nth-child(2) {
+            text-align: left;
+        }
+
+        .time > p {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    @media screen and (max-width: 479px) {
+        .work-header {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1em;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        img {
+            /* display: none; */
+        }
+
+        .box {
+            padding-right: 0px;
+        }
+
+        .back {
+            display: block;
+        }
+
+        .box > div {
+            top: -126px;
+            color: #666;
+            /* right: 0px; */
+            left: 28%;
+        }
+    }
+
+    @media screen and (max-width: 430px) {
+        .projects > .ols > li header {
+            flex-direction: column;
+        }
+
+        .projects > .ols > li header span {
+            text-align: left;
+            padding: 5px 0px;
+        }
+    }
+
+    @media screen and (max-width: 494px) {
+        .projects > .ols > li > header {
+            flex-direction: column;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .bac {
+            background-color: transparent;
+        }
     }
 }
 
-@media screen and (max-width:500px) {
-    .bac {
-        background-color: transparent;
-    }
-}
 
 /*# sourceMappingURL=/css.967bad95.css.map */
