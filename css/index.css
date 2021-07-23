@@ -225,6 +225,10 @@ hei {
     padding: 10px 1em 10px 1em ;
 }
 
+.work header:not(:last-child) {
+    margin-bottom: 10px;
+}
+
 .work header .work-header {
     display: flex;
 }
