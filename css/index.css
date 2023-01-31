@@ -1,463 +1,468 @@
 .container {
-    max-width: 210mm;
-    min-height: 297mm;
-    background-color: #fff;
-    /* margin: 10px auto; */
-    margin: 5px auto;
-    padding: 20px 20px 20px 20px;
-    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.15);
-    color: #3f1c1c;
-    font-size: 15px;
-    overflow: hidden;
-    page-break-before: always;
-    min-height: calc(100vh - 162px);
+  max-width: 210mm;
+  min-height: 297mm;
+  background-color: #fff;
+  /* margin: 10px auto; */
+  margin: 5px auto;
+  padding: 20px 20px 20px 20px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.15);
+  color: #3f1c1c;
+  font-size: 15px;
+  overflow: hidden;
+  page-break-before: always;
+  min-height: calc(100vh - 162px);
 }
 
 body {
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
 .back {
-    display: flex;
-    flex-wrap: wrap;
-    /* background-color: #3c3c3c; */
-    height: 100px;
-    display: none;
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: #3c3c3c; */
+  height: 100px;
+  display: none;
 }
 
 section {
-    display: block;
+  display: block;
 }
 
 h1 {
-    margin-left: -20px;
-    padding-left: 15px;
-    border-left: 5px solid blue;
+  margin-left: -20px;
+  padding-left: 15px;
+  border-left: 5px solid blue;
 }
 
 hei {
-    color: #1A1AA6;
-    font-weight: 900;
+  color: #1a1aa6;
+  font-weight: 900;
 }
 
 .boxes {
-    border: 2px solid transparent;
-    border-radius: 5px;
+  border: 2px solid transparent;
+  border-radius: 5px;
 }
-
-
 
 .box {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
 }
 
-.box>p {
-    padding: 6px 15px;
-    display: block;
-    font-size: 15px;
-    flex: 1;
-    max-width: 100%;
+.box > p {
+  padding: 6px 15px;
+  display: block;
+  font-size: 15px;
+  flex: 1;
+  max-width: 100%;
 }
 
-.box>p:nth-child(2) span {
-    margin-right: 10px;
+.box > p:nth-child(2) span {
+  margin-right: 10px;
 }
 
-.box>p:nth-child(2)>span:nth-child(1)::after,
-.box>p:nth-child(2)>span:nth-child(2)::after {
-    /* content: " | "; */
+.box > p:nth-child(2) > span:nth-child(1)::after,
+.box > p:nth-child(2) > span:nth-child(2)::after {
+  /* content: " | "; */
 }
 
 .hao {
-    width: 16px;
-    height: 16px;
+  width: 16px;
+  height: 16px;
 }
 
-.box>div {
-    position: absolute;
-    right: 0px;
-    top: 1px;
-    display: flex;
-    flex-direction: column;
-    /* background-color: aqua; */
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 170px;
+.box > div {
+  position: absolute;
+  right: 0px;
+  top: 1px;
+  display: flex;
+  flex-direction: column;
+  /* background-color: aqua; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 170px;
 }
 
-.box>div>img {
-    border: 1px solid #ccc;
-    border-radius: 50%;
+.box > div > img {
+  border: 1px solid #ccc;
+  border-radius: 50%;
 }
 
-.box>div>p {
-    font-size: 16px;
-    /* color: #666; */
-    color: #3f1c1c;
-    text-align: center;
+.box > div > p {
+  font-size: 16px;
+  /* color: #666; */
+  color: #3f1c1c;
+  text-align: center;
 
-    /* display: initial; */
+  /* display: initial; */
 }
 
-.time>p {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5px 15px;
-    font-size: 15px;
-    /* justify-content: space-between; */
+.time > p {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px 15px;
+  font-size: 15px;
+  /* justify-content: space-between; */
 }
 
-.time>p span:first-child {
-    flex: 1;
+.time > p span:first-child {
+  flex: 1;
 }
 
-
-.time>p span:nth-child(3) {
-    flex: 1;
-    text-align: right;
-    /* display: flex;
+.time > p span:nth-child(3) {
+  flex: 1;
+  text-align: right;
+  /* display: flex;
     justify-content: space-between; */
 }
 
-.time>p span:nth-child(2) {
-    text-align: left;
-    flex: 1;
-    padding-left: 100px;
+.time > p span:nth-child(2) {
+  text-align: left;
+  flex: 1;
+  padding-left: 100px;
 }
 
 .dis {
-    display: flex;
-    /* justify-content: space-between; */
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: center;
+  align-items: center;
 }
 
-.projects>.ols {
-    padding-right: 1em;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.projects > .ols {
+  padding-right: 1em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.h3_span {
+  font-weight: 700;
+}
+
+.p_dian{
+  padding-left: 1em;
+}
+
+.p_dian:before {
+  content: "·";
+  color: #0f0f0f;
+  font-weight: bold;
+  margin-left: -10px;
 }
 
 .uls {
-     padding: 1em 1em 1em  1em;
-    /*padding-right: 1em;*/
-    /*padding-left: 1em;*/
-    flex: 1;
-    /* max-width: 50%; */
+  padding: 1em 1em 1em 1em;
+  /*padding-right: 1em;*/
+  /*padding-left: 1em;*/
+  flex: 1;
+  /* max-width: 50%; */
 }
 
-.uls>li {
-    line-height: 1.5;
-    margin-bottom: 8px;
+
+
+.uls > li {
+  line-height: 1.5;
+  margin-bottom: 8px;
 }
 
 #hello {
-    /* flex: 1; */
-    width: 290px;
-    height: 270px;
-    /* justify-content: center;
+  /* flex: 1; */
+  width: 290px;
+  height: 270px;
+  /* justify-content: center;
     align-items: center; */
-    /* max-width: 50%; */
+  /* max-width: 50%; */
 }
 
-
-
-.ols>li {
-    color: #666;
-    padding-left: 1em;
+.ols > li {
+  color: #666;
+  padding-left: 1em;
 }
-.ols>li:not(:last-child) {
-    margin-bottom: 18px;
+.ols > li:not(:last-child) {
+  margin-bottom: 18px;
 }
 
-.ols>li>header {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 8px;
+.ols > li > header {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
 }
 
-.ols>li>header h3 {
-    width: 330px;
-    font-size: 18px;
-    color: #3f1c1c;
+.ols > li > header h3 {
+  width: 330px;
+  font-size: 18px;
+  color: #3f1c1c;
 }
 
-.ols>li span {
-    flex: 1;
-    text-align: center;
+.ols > li span {
+  flex: 1;
+  text-align: center;
 }
 
-.ols>li span a:first-child {
-    margin-right: 2em;
+.ols > li span a:first-child {
+  margin-right: 2em;
 }
 
-
-.ols>li span a {
-    color: green;
-    border-bottom: 1px solid;
+.ols > li span a {
+  color: green;
+  border-bottom: 1px solid;
 }
 
 .ols .spans .aaa {
-    margin-right: 98px;
+  margin-right: 98px;
 }
 
-.ols>li p {
-    /* color: #666; */
-    color: #3f1c1c;
-    margin: 0.3em 0px;
-    font-size: 15px;
+.ols > li p {
+  /* color: #666; */
+  color: #3f1c1c;
+  margin: 0.3em 0px;
+  font-size: 15px;
 }
 
-.ols>li strong {
-    color: #1A1AA6;
+.ols > li strong {
+  color: #1a1aa6;
 }
-
 
 .evaluate p {
-    padding: 5px 15px;
+  padding: 5px 15px;
 }
 
 .work {
-    padding: 10px 1em 10px 1em ;
+  padding: 10px 1em 10px 1em;
 }
 
 .work header:not(:last-child) {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .work header .work-header {
-    display: flex;
+  display: flex;
+  justify-content: space-between;
 }
 
 .work header .work-header h3 {
-    margin-right: 2em;
-    font-size: 18px;
-    color: #333;
+  margin-right: 2em;
+  font-size: 18px;
+  color: #333;
 }
 
 .work header .work-info p {
-    margin: 0.3em 0px;
-    font-size: 15px;
+  margin: 0.3em 0px;
+  font-size: 15px;
 }
-
 
 @media print {
-    #hello {
-        display: none;
-    }
+  #hello {
+    display: none;
+  }
 
-    .container {
-        box-shadow: none;
-    }
+  .container {
+    box-shadow: none;
+  }
 
-    .spans {
-        display: none;
-    }
+  .spans {
+    display: none;
+  }
 }
 
-@media screen and (min-width:1200px) {
-    .container {
-        width: 1170px;
-    }
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
 }
 
-@media screen and (min-width:992px) {
-    .container {
-        width: 970px;
-    }
+@media screen and (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
 }
 
-@media screen and (min-width:768px) {
-    .container {
-        width: 750px;
-    }
+@media screen and (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
 }
 
-@media screen and (max-width:767px) {
-    .container {
-        width: 100%;
-        margin: 0 auto;
-        box-shadow: none;
-    }
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: none;
+  }
 
-    /* section {} */
+  /* section {} */
 }
 
-@media screen and (max-width:700px) {
-    body {
-        margin: 0;
-    }
+@media screen and (max-width: 700px) {
+  body {
+    margin: 0;
+  }
 
-    .box {
-        padding-right: 90px;
-    }
+  .box {
+    padding-right: 90px;
+  }
 
-    .box div {
-        margin-top: 20px;
-        margin-right: 20px;
-    }
+  .box div {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
 
-    .box p:nth-child(2) {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0 15px;
-        /* flex-direction: column; */
-    }
+  .box p:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 15px;
+    /* flex-direction: column; */
+  }
 
-    .box>p:nth-child(2) span:first-child,
-    .box>p:nth-child(2) span:nth-child(2) {
-        /* flex: 1; */
-        padding-bottom: 10px;
-        flex: 100%;
-    }
+  .box > p:nth-child(2) span:first-child,
+  .box > p:nth-child(2) span:nth-child(2) {
+    /* flex: 1; */
+    padding-bottom: 10px;
+    flex: 100%;
+  }
 
-    .box>p:nth-child(2) span:first-child::after,
-    .box>p:nth-child(2) span:nth-child(2)::after {
-        display: none;
-    }
+  .box > p:nth-child(2) span:first-child::after,
+  .box > p:nth-child(2) span:nth-child(2)::after {
+    display: none;
+  }
 
-    .box>p:nth-child(2) span:last-child {
-        flex: 100%;
-    }
-
+  .box > p:nth-child(2) span:last-child {
+    flex: 100%;
+  }
 }
 
-@media screen and (max-width:600px) {
-    .dis {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        /* position: relative; */
-    }
+@media screen and (max-width: 600px) {
+  .dis {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* position: relative; */
+  }
 
-    .dis>#hello {
-        justify-content: center;
-        align-items: center;
-        flex: none;
-    }
+  .dis > #hello {
+    justify-content: center;
+    align-items: center;
+    flex: none;
+  }
 
-    .dis>.uls {
-        padding: 10px 15px;
-    }
+  .dis > .uls {
+    padding: 10px 15px;
+  }
 }
 
-@media screen and (max-width:560px) {
-    .box p:nth-child(2) {
-        flex-direction: column;
-    }
+@media screen and (max-width: 560px) {
+  .box p:nth-child(2) {
+    flex-direction: column;
+  }
 
-    .box p:nth-child(2) span {
-        flex: 100%;
-    }
+  .box p:nth-child(2) span {
+    flex: 100%;
+  }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width: 400px) {
+  .time > p span:nth-child(2) {
+    flex: 1;
+    text-align: center;
+  }
 
-    .time>p span:nth-child(2) {
-        flex: 1;
-        text-align: center;
-    }
-
-    .time>p span:first-child {
-        flex: none;
-    }
-
+  .time > p span:first-child {
+    flex: none;
+  }
 }
 
-@media screen and (max-width:560px) {
-    .time > p {
-        display: flex;
-        justify-content: space-between;
-    }
+@media screen and (max-width: 560px) {
+  .time > p {
+    display: flex;
+    justify-content: space-between;
+  }
 
-    .time > p > span:nth-child(2) {
-        padding: 0;
+  .time > p > span:nth-child(2) {
+    padding: 0;
+  }
+
+  .time > p > span:last-child {
+    flex: none;
+  }
+
+  .projects > .ols > li > header > .spans {
+    text-align: left;
+  }
+
+  @media screen and (max-width: 385px) {
+    .time > p:first-child {
+      border-bottom: 1px solid #e0e0e0;
     }
 
     .time > p > span:last-child {
-        flex: none;
+      /* display: none; */
+      text-align: left;
     }
 
-
-    .projects > .ols > li > header > .spans {
-        text-align: left;
+    .time > p > span:nth-child(2) {
+      text-align: left;
     }
 
+    .time > p {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 
-    @media screen and (max-width: 385px) {
-        .time > p:first-child {
-            border-bottom: 1px solid #e0e0e0;
-        }
+  @media screen and (max-width: 479px) {
+    .work-header {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1em;
+    }
+  }
 
-        .time > p > span:last-child {
-            /* display: none; */
-            text-align: left;
-        }
-
-        .time > p > span:nth-child(2) {
-            text-align: left;
-        }
-
-        .time > p {
-            display: flex;
-            flex-direction: column;
-        }
+  @media screen and (max-width: 480px) {
+    img {
+      /* display: none; */
     }
 
-    @media screen and (max-width: 479px) {
-        .work-header {
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 1em;
-        }
+    .box {
+      padding-right: 0px;
     }
 
-    @media screen and (max-width: 480px) {
-        img {
-            /* display: none; */
-        }
-
-        .box {
-            padding-right: 0px;
-        }
-
-        .back {
-            display: block;
-        }
-
-        .box > div {
-            top: -126px;
-            color: #666;
-            /* right: 0px; */
-            left: 28%;
-        }
+    .back {
+      display: block;
     }
 
-    @media screen and (max-width: 430px) {
-        .projects > .ols > li header {
-            flex-direction: column;
-        }
+    .box > div {
+      top: -126px;
+      color: #666;
+      /* right: 0px; */
+      left: 28%;
+    }
+  }
 
-        .projects > .ols > li header span {
-            text-align: left;
-            padding: 5px 0px;
-        }
+  @media screen and (max-width: 430px) {
+    .projects > .ols > li header {
+      flex-direction: column;
     }
 
-    @media screen and (max-width: 494px) {
-        .projects > .ols > li > header {
-            flex-direction: column;
-        }
+    .projects > .ols > li header span {
+      text-align: left;
+      padding: 5px 0px;
     }
+  }
 
-    @media screen and (max-width: 500px) {
-        .bac {
-            background-color: transparent;
-        }
+  @media screen and (max-width: 494px) {
+    .projects > .ols > li > header {
+      flex-direction: column;
     }
+  }
+
+  @media screen and (max-width: 500px) {
+    .bac {
+      background-color: transparent;
+    }
+  }
 }
