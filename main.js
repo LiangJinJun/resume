@@ -1,6 +1,7 @@
 var myChart = echarts.init(document.getElementById('hello'));
 
 
+
 option = {
     // title: {
     //     text: '某站点用户访问来源',

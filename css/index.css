@@ -143,15 +143,19 @@ hei {
   font-weight: 700;
 }
 
-.p_dian{
-  padding-left: 1em;
-}
-
-.p_dian:before {
+.h3_span:before {
   content: "·";
   color: #0f0f0f;
   font-weight: bold;
-  margin-left: -10px;
+  margin-left: -1em;
+}
+
+.p_dian {
+  padding-left: 2em;
+}
+
+.p_dian >p:not(:first-child){
+  text-indent:2em;
 }
 
 .uls {
@@ -161,8 +165,6 @@ hei {
   flex: 1;
   /* max-width: 50%; */
 }
-
-
 
 .uls > li {
   line-height: 1.5;
@@ -178,9 +180,13 @@ hei {
   /* max-width: 50%; */
 }
 
+.ols{
+  margin: 10px 0 20px 0;
+}
+
 .ols > li {
   color: #666;
-  padding-left: 1em;
+  padding-left: 18px;
 }
 .ols > li:not(:last-child) {
   margin-bottom: 18px;
