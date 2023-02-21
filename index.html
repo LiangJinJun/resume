@@ -64,237 +64,277 @@
             <div class="work-header">
               <h3>广州长胜信息技术有限公司</h3>
               <span>web前端开发</span>
-              <span>2021.8 ~ 2022.12</span>
+              <!--              <span>2021.8 ~ 2022.12</span>-->
             </div>
             <div class="work-info">
-              <!--              <p>负责使用 <hei>Vue</hei>、<hei>React</hei>、<hei>UniApp</hei>的开发工作</p>-->
-              <!--              <p>-->
-              <!--                使用<hei>Typescript</hei>进⾏整体出项⽬重构。完成客户定制页面及⽇常项⽬迭代。-->
-              <!--              </p>-->
-              <ol class="ols">
-                <li>
-                  <header>
-                    <h3>侃侃</h3>
-                  </header>
-                  <p class="p_dian">
-                    <span class="h3_span">项目介绍：</span>
-                    该项目是使用<hei>uniapp</hei>进行开发的 app 端与 h5
-                    端的聊天项目。
-                  </p>
-                  <!--                  <p class="p_dian">-->
-                  <!--                    <span class="h3_span">项目模块：</span>-->
-                  <!--                    信息发送模块(支持文字、表情、图片、视频、语音、文件，发送方式(支持私聊、群聊))、消息推送模块(接-->
-                  <!--                    入极光推送、个推)、添加/加入验证模块(好友验证、群验证)、用户操作模块(拉黑、禁言)-->
-                  <!--                  </p>-->
-                  <div class="p_dian">
-                    <p class="h3_span">工作内容：</p>
-                    <p>
-                      在进入程序的时候对后台进行链接,
-                      由于<hei>Websocket</hei>在与服务器进行链接的时候有可能会断开，所以在最开始就要加上了心跳，设置定时器在一定时间后给后端发送一个关键字
-                      跟服务端保持通讯的关键字，在重连时候清除定时器再使用connectSocket创建WebSocket链接。onClose监听WebSocket关闭事件。在断开的时候进行重链接。这个方法定义在App.vue上，直接在原型链上定义该方法，通过调用api
-                      uni.sendSocketMessage一直向服务器发送消息来判断是否断开。
-                    </p>
-                    <p>
-                      配置厂商推送设置，通过服务端接口下发推送消息，封装个推Rest-V2接口。
-                    </p>
-                    <p>
-                      安装极光推送插件,配置appkey和设置集成的厂商通道。在登录成功的时候设置别名，在退出登录成功的时候取消别名，以防用户退出登录的状态下仍接受通知消息。
-                    </p>
-                  </div>
-                  <p class="p_dian">
-                    <span class="h3_span">技术栈：</span>
-                    <hei
-                      >uniapp、<hei>腾讯云对象储存</hei>、<hei>极光推送</hei>、<hei
-                        >个推</hei
-                      ></hei
-                    >
-                  </p>
-                </li>
-                <li>
-                  <header>
-                    <h3>豆豆抢单平台app</h3>
-                  </header>
-                  <p class="p_dian">
-                    <span class="h3_span">项目介绍：</span>
-                    该平台相当于是一个抢单的辅助工具，在首页提供了新平台创建，用户在创建时需要提供
-                    平台名称、平台网址、以及平台的账号密码。在B端就会收到提供的新平台，最后我们会逐步的对新平台进行抓包对接以及旧平台的维护。
-                  </p>
-                  <div class="p_dian">
-                    <p class="h3_span">工作内容：</p>
-                    <p>
-                      使用 <hei>uniapp</hei> 内置组件和 <hei>uView</hei>
-                      对页面进行设计和使用TypeScript进行重构。
-                    </p>
-                    <p>
-                      使用Fiddler
-                      抓包工具抓取"手机APP"数据包，将爬取到的数据包在该平台上进行请求。
-                    </p>
-                    <p>
-                      抢单使用 setTimeout
-                      定时器在一定的时间后去轮询接口是否接单成功。接单成功则使用
-                      震动以及使用
-                      语音播报来提示用户。通过遍历递归每一个数据，获取到任务的平台将保存到vuex中，通过弹窗方式显示给用户查看。
-                    </p>
-                  </div>
-                  <p class="p_dian">
-                    <span class="h3_span">技术栈：</span>
-                    <hei>UniApp</hei>+<hei>TypeScript</hei>
-                  </p>
-                </li>
-                <li>
-                  <header>
-                    <h3>鱼塘</h3>
-                  </header>
-                  <p class="p_dian">
-                    <span class="h3_span">项目介绍：</span>
-                    该项目使用<hei>Vue2</hei>开发，用户在该平台上登录接单的平台。
-                  </p>
-                  <div class="p_dian">
-                    <p class="h3_span">工作内容：</p>
-                    <p>
-                      防止用户频繁点击，设置定时器在一定的时间内点击不会触发请求包，由系统派发任务。
-                    </p>
-                    <p>
-                      使⽤ <hei>防抖</hei> 优化搜索和表单校验是的请求次数,使⽤
-                      <hei>节流</hei> 优化加
-                      载更多防⽌重复触发请求，优化其请求次数。
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <header>
-                    <h3>鱼塘后台</h3>
-                  </header>
-                  <p class="p_dian">
-                    <span class="h3_span">项目介绍：</span>
-                    该项目使用
-                    <hei>Vue3</hei
-                    >、<hei>iView</hei>、<hei>、vite</hei>搭建开发的B端后台。
-                  </p>
-                  <div class="p_dian">
-                    <p class="h3_span">工作介绍：</p>
-                    <p>根据 ui 设计师提供的设计图完成项目页面的制作</p>
-                    <p>
-                      使用全局状态管理，路由懒加载、封装组件，封装Request请求。
-                    </p>
-                    <p>
-                      使⽤ Vue Test Utils 为其编写
-                      <hei>单元/组件测试</hei>
-                      。<hei>优化图⽚</hei>上传模块，添加进度条以及多图⽚上传时的异步
-                      <hei>并发</hei>
-                      控制。
-                    </p>
-                  </div>
-                </li>
-              </ol>
+              <p>
+                使用
+                <hei>Vue</hei> 开发客户端和后台项目，对后台项目进行页面重构。
+              </p>
+              <p>
+                使用 <hei>UniApp</hei>+<hei>Typescript</hei>
+                开发h5和app端应用。根据实际业务场景及需求，设计前端基础架构，并带领其他组员实现并持续优化。
+              </p>
             </div>
           </header>
           <header>
             <div class="work-header">
               <h3>广州列丰信息科技有限公司</h3>
               <span>web前端开发</span>
-              <span>2021.3 ~ 2021.7</span>
+              <!--              <span>2021.3 ~ 2021.7</span>-->
             </div>
             <div class="work-info">
-              <ol class="ols">
-                <li>
-                  <header>
-                    <h3>社区随约服务网上驿站管理后台</h3>
-                    <span class="spans"></span>
-                  </header>
-                  <p class="p_dian">
-                    <span class="h3_span">项目介绍：</span>
-                    该项目使用<hei>Vue2</hei>、<hei>iView</hei>开发的的后台管理。
-                  </p>
-                  <div class="p_dian">
-                    <p class="h3_span">工作内容:</p>
-                    <p>
-                      使⽤ Echart 开发⼤数据图表数据展示模块,配置用户
-                      <hei>权限分配</hei
-                      >、<hei>路由懒加载</hei>、<hei>图片懒加载</hei>、实现树形控件菜单的增删改查、面包屑导航，根据树形控件的点击层级来递归遍历展示面包屑导航，在添加树形组件菜单的时候使用push添加进去，优化树形控件菜单的展示体验。
-                      以及BUG修复及项目更新迭代。
-                    </p>
-                  </div>
-                  <p class="p_dian">
-                    <span class="h3_span">技术栈: </span>
-                    <hei>Vue</hei> + <hei>TypeScript</hei>
-                  </p>
-                </li>
-                <li>
-                  <header>
-                    <h3>影视会员充值网</h3>
-                  </header>
-                  <p class="p_dian">
-                    <span class="h3_span">工作内容：</span>
-                    是一个基于UniApp开发的微信小程序。
-                  </p>
-                  <p class="p_dian">
-                    <span class="h3_span">工作内容：</span>
-                    根据ui实现页面设计，实现登录授权，会员购买充值，微信支付。
-                  </p>
-                  <p class="p_dian">
-                    <span class="h3_span">技术栈：</span>
-                    <hei>UniApp</hei>+<hei>uView</hei>+<hei>TypeScript</hei>
-                  </p>
-                </li>
-              </ol>
+              <p>
+                负责使用 <hei>Vue</hei>+<hei>iView Ui</hei>
+                开发后台项目和封装组件,以及优化树形组件的交互体验。
+              </p>
+              <p>
+                依据产品需求完成后台的开发和维护。使用TypeScript进⾏整体出项⽬重构。
+              </p>
             </div>
           </header>
           <header>
             <div class="work-header">
               <h3>广州极最互联网科技有限公司</h3>
-              <span>web前端开发(实习)</span>
-              <span>2020.11 ~ 2021.3</span>
+              <span>web前端开发</span>
+              <!--              <span>2020.11 ~ 2021.3</span>-->
             </div>
             <div class="work-info">
-              <ol class="ols">
-                <li>
-                  <header>
-                    <h3>学术</h3>
-                    <!--                            <span class="spans">-->
-                    <!--                                <a href="https://gitee.com/liangjinjun/vue-academic" target="view_window">源码链接</a>-->
-                    <!--                                <a href="http://www.minil.com.cn/" target="view_window">项目预览</a>-->
-                    <!--                            </span>-->
-                  </header>
-                  <p class="p_dian">
-                    <span class="h3_span">项目介绍：</span>
-                    是一个基于PC端原生<hei>Vue</hei>开发的简易快捷的会议投稿系统
-                  </p>
-                  <p class="p_dian">
-                    <span class="h3_span">工作内容：</span>
-                    负责前端页面展示，<hei>用户登录</hei>、<hei>用户投稿</hei>、<hei>用户回执</hei>、<hei>文件上传</hei>、<hei
-                      >个人信息</hei
-                    >
-                    和后台管理系统的实现。
-                  </p>
-                  <!--                  <p class="p_dian">-->
-                  <!--                    <span class="h3_span">技术栈：</span>-->
-                  <!--                    <hei>Vue</hei>-->
-                  <!--                  </p>-->
-                </li>
-                <li>
-                  <header>
-                    <h3>重庆定制家居门博会</h3>
-                    <!--                            <span class="spans">-->
-                    <!--                                <a href="https://gitee.com/liangjinjun/vue-h5" target="view_window">源码链接</a>-->
-                    <!--                                <a href="http://zt.jizui.top/#/index" target="view_window">项目预览</a>-->
-                    <!--                            </span>-->
-                  </header>
-                  <p class="p_dian">
-                    <span class="h3_span">项目内容：</span>
-                    使用 <hei>Vue</hei>+ <hei>Vant</hei>开发的H5网页展会登记
-                  </p>
-                  <p class="p_dian">
-                    <span class="h3_span">工作内容：</span>
-                    负责前端页面展示， <hei>用户个人信息</hei> 、
-                    <hei>身份证验证</hei> 、 <hei>报名查询等功能</hei>。
-                  </p>
-                </li>
-              </ol>
+              <p>
+                负责使用
+                <hei>Vue</hei>
+                搭建客户端和后台的开发。封装Request请求，通用组件，文件样式抽离等。完成客户定制⻚⾯及⽇常项⽬迭代。
+              </p>
             </div>
           </header>
         </div>
       </section>
+       <section>
+        <h1 class="f-w-900 f-s-18 m-b-20">项目经历</h1>
+        <div class="boxes m-b-20 bac projects">
+          <ol class="ols">
+            <li>
+              <header>
+                <h3>豆豆 app</h3>
+              </header>
+              <p class="p_dian">
+                <span class="h3_span">项目介绍：</span>
+                使用<hei>uniapp</hei>进行开发的 app 端与 h5
+                端的一个抢单辅助工具，该项目还使用了websocket实现了长链接的聊天功能。
+              </p>
+              <div class="p_dian">
+                <p class="h3_span">工作内容：</p>
+                <p>
+                  使用 <hei>uniapp</hei> 内置组件和 <hei>uView</hei>
+                  对页面进行设计和使用TypeScript进行重构。
+                </p>
+                <p>
+                  使用Fiddler
+                  抓包工具抓取"手机APP"数据包，将爬取到的数据包在该平台上进行请求。
+                </p>
+                <p>
+                  使用轮询在一定的时间后去获取最新数据，查看是否接单成功。接单成功则使用
+                  震动以及使用
+                  语音播报来提示用户。通过遍历递归每一个数据，获取到任务的平台将保存到vuex中，通过弹窗方式显示给用户查看。
+                </p>
+                <p>
+                  运用原生JavaScript对菜单进行定制,主要使用到了阻止冒泡和阻止默认事件
+                </p>
+                <p>
+                  WebSocket连接后一分钟自动断开的解决， 网络正常的情况：
+                  websocket和心跳包 + 5s的轮询， 网络异常的情况：
+                  websocket（进行10次重连） + 1s的轮询。
+                </p>
+                 <p>
+                  使⽤ <hei>防抖</hei> 优化搜索和表单校验的请求次数,使⽤
+                  <hei>节流</hei> 优化加载更多防止重复触发请求，优化其请求次数。
+                </p>
+              </div>
+              <p class="p_dian">
+                <span class="h3_span">技术栈：</span>
+                <hei>UniApp</hei>、<hei>TypeScript</hei>、<hei>腾讯云对象储存</hei>、<hei>极光推送</hei>、<hei
+                    >个推</hei
+                  ></hei
+              </p>
+            </li>
+
+            <li>
+              <header>
+                <h3>鱼塘后台</h3>
+              </header>
+              <p class="p_dian">
+                <span class="h3_span">项目介绍：</span>
+                该项目使用
+                <hei>Vue3</hei
+                >、<hei>iView</hei>、<hei>、vite</hei>搭建开发的B端后台项目。
+              </p>
+              <div class="p_dian">
+                <p class="h3_span">工作介绍：</p>
+                <p>根据 ui 设计师提供的设计图完成项目页面的制作</p>
+                <p>使用全局状态管理，路由懒加载、封装组件，封装Request请求。</p>
+                <p>使用eslint、pre-commit配置代码格式规范，以及提交代码对其进行效验，防止合并造成代码上的冲突。</p>
+                <p>
+                  使⽤ Vue Test Utils 为其编写
+                  <hei>单元/组件测试</hei>
+                  。<hei>优化图片</hei>上传模块，添加进度条以及多图⽚上传时的异步
+                  <hei>并发</hei>
+                  控制。
+                </p>
+              </div>
+            </li>
+            <li>
+              <header>
+                <h3>社区随约服务网上驿站管理后台</h3>
+                <span class="spans"></span>
+              </header>
+              <p class="p_dian">
+                <span class="h3_span">项目介绍：</span>
+                该项目使用<hei>Vue2</hei>、<hei>iView</hei>开发的的后台管理。
+              </p>
+              <div class="p_dian">
+                <p class="h3_span">工作内容:</p>
+                <p>
+                  使⽤ Echart 开发大数据图表数据展示模块,配置用户
+                  <hei>权限分配</hei
+                  >、<hei>图片懒加载</hei>、实现树形控件菜单的增删改，根据树形控件的点击层级来递归遍历展示面包屑导航，在添加树形组件菜单的时候使用push添加进去，优化树形控件菜单的展开体验。
+                  以及BUG修复及项目更新迭代。
+                </p>
+              </div>
+              <p class="p_dian">
+                <span class="h3_span">技术栈: </span>
+                <hei>Vue</hei> + <hei>TypeScript</hei>
+              </p>
+            </li>
+            <li>
+              <header>
+                <h3>影视会员充值网</h3>
+              </header>
+              <p class="p_dian">
+                <span class="h3_span">工作内容：</span>
+                是一个基于UniApp开发的微信小程序。
+              </p>
+              <p class="p_dian">
+                <span class="h3_span">工作内容：</span>
+                根据ui实现页面设计，实现登录授权，会员购买充值，微信支付。
+              </p>
+              <p class="p_dian">
+                <span class="h3_span">技术栈：</span>
+                <hei>UniApp</hei>+<hei>uView</hei>+<hei>TypeScript</hei>
+              </p>
+            </li>
+            <li>
+              <header>
+                <h3>学术</h3>
+                <!--                            <span class="spans">-->
+                <!--                                <a href="https://gitee.com/liangjinjun/vue-academic" target="view_window">源码链接</a>-->
+                <!--                                <a href="http://www.minil.com.cn/" target="view_window">项目预览</a>-->
+                <!--                            </span>-->
+              </header>
+              <p class="p_dian">
+                <span class="h3_span">项目介绍：</span>
+                是一个基于PC端原生<hei>Vue</hei>开发的简易快捷的会议投稿系统
+              </p>
+              <p class="p_dian">
+                <span class="h3_span">工作内容：</span>
+                负责前端页面展示，<hei>用户登录</hei>、<hei>用户投稿</hei>、<hei>用户回执</hei>、<hei>文件上传</hei>、<hei
+                  >个人信息</hei
+                >
+                和后台管理系统的实现。
+              </p>
+              <!--                  <p class="p_dian">-->
+              <!--                    <span class="h3_span">技术栈：</span>-->
+              <!--                    <hei>Vue</hei>-->
+              <!--                  </p>-->
+            </li>
+            <li>
+              <header>
+                <h3>重庆定制家居门博会</h3>
+                <!--                            <span class="spans">-->
+                <!--                                <a href="https://gitee.com/liangjinjun/vue-h5" target="view_window">源码链接</a>-->
+                <!--                                <a href="http://zt.jizui.top/#/index" target="view_window">项目预览</a>-->
+                <!--                            </span>-->
+              </header>
+              <p class="p_dian">
+                <span class="h3_span">项目内容：</span>
+                使用 <hei>Vue</hei>+ <hei>Vant</hei>开发的H5网页展会登记
+              </p>
+              <p class="p_dian">
+                <span class="h3_span">工作内容：</span>
+                负责前端页面展示， <hei>用户个人信息</hei> 、
+                <hei>身份证验证</hei> 、 <hei>报名查询等功能</hei>。
+              </p>
+            </li>
+
+            <!-- <li>
+                              <header>
+                                  <h3>CNODE社区</h3>
+                                  <span class="spans">
+                                      <a href="https://gitee.com/liangjinjun/vue-cnode1"target="view_window">源码链接</a>
+                                      <a href="https://liangjinjun.gitee.io/vue-cnode1-website"target="view_window">项目预览</a>
+                                  </span>
+                              </header>
+                              <p>CNODE社区是基于PC端的问答社区的页面展示</p>
+                              <p>是一款基于
+                                  <hei>Vue</hei>
+                                  、
+                                  <hei>VueRouter</hei>页面路由切换
+                                  、
+                                  <hei>axios</hei>基于 <hei>Promise</hei> 的 <hei>HTTP</hei> 库，向后端发起请求
+                                  的前端页面展示
+                              </p>
+                          </li> -->
+            <!-- <li>
+                              <header>
+                                  <h3>赣企通</h3>
+                                  <span class="spans">
+                                      <a class="aaa" href="https://s3.ax1x.com/2020/11/30/DgogLd.jpg" target="view_window">二维码</a>
+                                  </span>
+                              </header>
+                              <p>赣企通，是一款使用<hei>uni-app</hei>制作的企业线上下单商城小程序应用。<hei>主要业务</hei>为公务印章申请、遗失申报。</p>
+                              <p>功能实现有：数据信息 <hei>上传</hei> 模块、身份<hei>实名验证</hei>模块、在线<hei>下单支付</hei>模块、<hei>购物车</hei>模块、订单显示模块。
+                              </p>
+                              <p>主要负责根据设计稿<hei>还原</hei>页面，购物车板块<hei>API</hei>接入、我的页面数据显示、登录模块的逻辑<hei>检验</hei>及错误显示。
+                              </p>
+                          </li> -->
+            <!-- <li>
+                              <header>
+                                  <h3>皮卡丘</h3>
+                                  <span class="spans">
+                                      <a href="https://gitee.com/liangjinjun/Pikachu" target="view_window">源码链接</a>
+                                      <a href="http://liangjinjun.gitee.io/pikachu/text.html" target="view_window">项目预览</a>
+                                  </span>
+                              </header>
+                              <p>该项目实现
+                                  <hei class="hei">原生JavaScript</hei>
+                                  +
+                                  <hei>css</hei>
+                                  的在网页中
+                                  <hei>展现</hei>
+                                  出皮卡丘的效果
+                              </p>
+                              <p>所有功能均使用原生
+                                  <hei>JavaScript</hei>实现。如：<hei>绘画</hei>、<hei>暂停/播放</hei>、<hei>倍数调整</hei>、<hei>重新初始化项目</hei>
+                              </p>
+                          </li> -->
+
+            <!-- <li>
+                              <header>
+                                  <h3>3D 旋转</h3>
+                                  <span class="spans">
+                                      <a href="https://gitee.com/liangjinjun/pure_css__3d_rotation"target="view_window">源码链接</a>
+                                      <a href="http://liangjinjun.gitee.io/pure_css__3d_rotation"target="view_window">项目预览</a>
+                                  </span>
+                              </header>
+                              <p>一个纯<strong>CSS</strong> 实现盒子3D的旋转效果</p>
+                              <p>所有子元素在3D空间中呈现,元素距离视图的距离，以像素计。
+                                  也就是我们所说的能使容器具有透视效果的一个属性，值越大，它距离我们眼睛的距离就越近</p>
+                          </li> -->
+
+
+          </ol>
+        </div>
+      </section>
+
       <section>
         <h1 class="f-w-900 f-s-18 m-b-20">开源项目</h1>
         <div class="boxes m-b-20 bac projects">
@@ -384,9 +424,9 @@
           <div id="hello"></div>
           <ul class="uls">
             <li>
-              使⽤ <hei>Vue2</hei>、<hei>Vue3</hei>、<hei>UniApp</hei>
-              独⽴及参与完成开发 7+
-              多个项⽬。对<hei>Vuex</hei>和<hei>VueRouter</hei>插件源码有初步了解曾简单实现基本功能
+              熟悉使用 <hei>Vue2</hei>、<hei>Vue3</hei>、<hei>UniApp</hei>
+              独⽴及参与完成开发 6+
+              多个项目。对<hei>Vuex</hei>和<hei>VueRouter</hei>插件源码有初步了解曾简单实现基本功能
             </li>
             <!--                    <li>有了解-->
             <!--                        <hei>Vue</hei>-->
@@ -398,24 +438,10 @@
             <!--                        <hei>VueRouter</hei>-->
             <!--                        核心代码-->
             <!--                    </li>-->
+
+            <li>熟悉使用<hei>TypeScript</hei>维护项目，使其更易于阅读和调试。</li>
             <li>
-              能使用
-              <hei>Uni</hei>/<hei>Taro</hei>
-              完成跨端开发。了解使用<hei>Echart</hei>、<hei>JQuery</hei>、<hei>Bootstrap</hei>等。
-            </li>
-            <li>
-              了解 NodeJs 以及
-              <hei>NestJS</hei
-              >框架、了解<hei>docker</hei>容器使用和使用<hei>typeorm</hei>操作数据库
-            </li>
-            <li>
-              使用过
-              <hei>React</hei>
-              实现简单Demo，可以快速上手实际开发
-            </li>
-            <li>能使用<hei>TypeScript</hei>维护项目，使其更易于阅读和调试。</li>
-            <li>
-              能使用为团队配置<hei>eslint</hei>、<hei>pre-commit</hei>
+              熟悉使用为团队配置<hei>eslint</hei>、<hei>pre-commit</hei>
               控制代码规范。
             </li>
 
@@ -424,14 +450,27 @@
             <!--                        <hei>Ecahrt</hei>-->
             <!--                    </li>-->
             <li>
-              掌握组件化开发，通用组件封装保持代码
+              熟悉组件化开发，通用组件封装保持代码
               <hei>复用性</hei>
             </li>
             <li>
-              掌握前端基本三件套
+              熟悉前端基本三件套
               <hei>ES6</hei>
-              +，包括 <hei>async/await</hei>、<hei>promise</hei>、<hei>解构赋值</hei>、<hei>扩展运算符</hei>
+              +，包括
+              <hei>async/await</hei
+              >、<hei>promise</hei>、<hei>解构赋值</hei>、<hei>扩展运算符</hei>
               等。
+            </li>
+            <li>了解使用<hei>Echart</hei>、<hei>JQuery</hei>、<hei>Bootstrap</hei>等。</li>
+              <li>
+              了解使用过
+              <hei>React</hei>
+              实现简单Demo，可以快速上手实际开发
+            </li>
+             <li>
+              了解 NodeJs 以及
+              <hei>NestJS</hei
+              >框架、了解<hei>docker</hei>容器使用和使用<hei>typeorm</hei>操作数据库
             </li>
             <li>
               使用
@@ -441,262 +480,7 @@
           </ul>
         </div>
       </section>
-      <!--      <section>-->
-      <!--        <h1 class="f-w-900 f-s-18 m-b-20">项目经历</h1>-->
-      <!--        <div class="boxes m-b-20 bac projects">-->
-      <!--          <ol class="ols">-->
-      <!--            <li>-->
-      <!--              <header>-->
-      <!--                <h3>社区随约服务网上驿站管理后台</h3>-->
-      <!--                <span class="spans"></span>-->
-      <!--              </header>-->
-      <!--              <p class="p_dian">-->
-      <!--                <span class="h3_span">项⽬介绍: </span>-->
-      <!--                社区随约服务网上驿站是一款与广州市民政局合作研发的产品，主要以人、家庭、社区为核心的服务项目。-->
-      <!--                一个高效可复用的-->
-      <!--                <hei>后台管理系统</hei>-->
-      <!--                、传入数据库相关配置、快速生成可视化数据库配置页面-->
-      <!--              </p>-->
-      <!--              <p class="p_dian">-->
-      <!--                <span class="h3_span">工作内容: </span>-->
-      <!--                负责用户-->
-      <!--                <hei>权限分配</hei>-->
-      <!--                、-->
-      <!--                <hei>产品管理</hei>-->
-      <!--                、BUG修复及项目更新迭代-->
-      <!--              </p>-->
-      <!--              <p class="p_dian">-->
-      <!--                <span class="h3_span">技术栈: </span>-->
-      <!--                <hei>Vue2</hei> + <hei>iView</hei> + <hei>Vuex</hei> +-->
-      <!--                <hei>TypeScript</hei>-->
-      <!--              </p>-->
-      <!--            </li>-->
-      <!--            <li>-->
-      <!--              <header>-->
-      <!--                <h3>鱼塘</h3>-->
-      <!--              </header>-->
-      <!--              <p class="p_dian">-->
-      <!--                <span class="h3_span">项目介绍：</span>-->
-      <!--                鱼塘是一个基-->
-      <!--                <hei>H5</hei-->
-      <!--                >的接单平台,由后台派单，前台获取数据接口后来进行抢单。-->
-      <!--                项目主要是<hei>抢单成功</hei>后、便可以开始任务，<hei>赚取佣金</hei>。-->
-      <!--              </p>-->
-      <!--              <p class="p_dian">-->
-      <!--                <span class="h3_span">工作内容：</span>-->
-      <!--                编写抢单模块、获取任务订单列表、订单任务的执行步骤模块。-->
-      <!--              </p>-->
-      <!--              <p class="p_dian">-->
-      <!--                <span class="h3_span">技术栈：</span>-->
-      <!--                <hei>Vue</hei>-->
-      <!--              </p>-->
-      <!--            </li>-->
-      <!--            <li>-->
-      <!--              <header>-->
-      <!--                <h3>鱼塘后台</h3>-->
-      <!--              </header>-->
-      <!--              <p class="p_dian">-->
-      <!--                <span class="h3_span">项目介绍：</span>-->
-      <!--                在这个后台派单给予前台的鱼塘项目来接单。-->
-      <!--              </p>-->
-      <!--              <p class="p_dian">-->
-      <!--                <span class="h3_span">工作介绍：</span>-->
-      <!--                负责BUG修复以及项目更新迭代-->
-      <!--              </p>-->
-      <!--              <p class="p_dian">-->
-      <!--                <span class="h3_span">技术栈：</span>-->
-      <!--                <hei>Vue+iView</hei>-->
-      <!--              </p>-->
-      <!--            </li>-->
-      <!--            <li>-->
-      <!--              <header>-->
-      <!--                <h3>豆豆抢单平台app</h3>-->
-      <!--              </header>-->
-      <!--              <p class="p_dian">-->
-      <!--                <span class="h3_span">项目介绍：</span>-->
-      <!--                豆豆抢单平台相当于是一个辅助工具，<hei>爬取</hei>第三方平台接口来进行对接，将其使在豆豆平台上能请求到爬取到的第三方平台接口来进行抢单。-->
-      <!--              </p>-->
-      <!--              <p class="p_dian">-->
-      <!--                <span class="h3_span">工作内容：</span>-->
-      <!--                主要负责-->
-      <!--                对接新旧平台爬取的接口的更新迭代、<hei>记账模块</hei>，<hei>抢单模块</hei>的改版、使用<hei>web-view</hei>嵌入客服模块,<hei>购买会员</hei>模块和<hei>购卡记录</hei>模块,<hei>银行卡管理</hei>和<hei>支付宝管理</hei>模块、和<hei>支付宝扫码支付</hei>购买会员。使用第三方<hei>插件</hei>设置权限，避免后台关闭进程、推广邀请海报以及接单提醒播报。以及后续BUG修复以及项目更新迭代.-->
-      <!--              </p>-->
-      <!--              <p class="p_dian">-->
-      <!--                <span class="h3_span">技术栈：</span>-->
-      <!--                <hei>UniApp</hei>+<hei>uView</hei>+<hei>TypeScript</hei>-->
-      <!--              </p>-->
-      <!--            </li>-->
-      <!--            <li>-->
-      <!--              <header>-->
-      <!--                <h3>侃侃</h3>-->
-      <!--              </header>-->
-      <!--              <p class="p_dian">-->
-      <!--                <span class="h3_span">项目介绍：</span>-->
-      <!--                侃侃是一个基于<hei>UniApp</hei>开发的多端聊天平台-->
-      <!--              </p>-->
-      <!--              <p class="p_dian">-->
-      <!--                <span class="h3_span">工作内容：</span>-->
-      <!--                使用<hei>webSocket</hei>来建立连接，主要功能是登录、添加好友、聊天、群聊.-->
-      <!--              </p>-->
-      <!--              <p class="p_dian">-->
-      <!--                <span class="h3_span">技术栈</span>-->
-      <!--                <hei>UniApp</hei>+<hei>webSocket</hei>-->
-      <!--              </p>-->
-      <!--            </li>-->
 
-      <!--            &lt;!&ndash; <li>-->
-      <!--                        <header>-->
-      <!--                            <h3>CNODE社区</h3>-->
-      <!--                            <span class="spans">-->
-      <!--                                <a href="https://gitee.com/liangjinjun/vue-cnode1"target="view_window">源码链接</a>-->
-      <!--                                <a href="https://liangjinjun.gitee.io/vue-cnode1-website"target="view_window">项目预览</a>-->
-      <!--                            </span>-->
-      <!--                        </header>-->
-      <!--                        <p>CNODE社区是基于PC端的问答社区的页面展示</p>-->
-      <!--                        <p>是一款基于-->
-      <!--                            <hei>Vue</hei>-->
-      <!--                            、-->
-      <!--                            <hei>VueRouter</hei>页面路由切换-->
-      <!--                            、-->
-      <!--                            <hei>axios</hei>基于 <hei>Promise</hei> 的 <hei>HTTP</hei> 库，向后端发起请求-->
-      <!--                            的前端页面展示-->
-      <!--                        </p>-->
-      <!--                    </li> &ndash;&gt;-->
-      <!--            &lt;!&ndash; <li>-->
-      <!--                        <header>-->
-      <!--                            <h3>赣企通</h3>-->
-      <!--                            <span class="spans">-->
-      <!--                                <a class="aaa" href="https://s3.ax1x.com/2020/11/30/DgogLd.jpg" target="view_window">二维码</a>-->
-      <!--                            </span>-->
-      <!--                        </header>-->
-      <!--                        <p>赣企通，是一款使用<hei>uni-app</hei>制作的企业线上下单商城小程序应用。<hei>主要业务</hei>为公务印章申请、遗失申报。</p>-->
-      <!--                        <p>功能实现有：数据信息 <hei>上传</hei> 模块、身份<hei>实名验证</hei>模块、在线<hei>下单支付</hei>模块、<hei>购物车</hei>模块、订单显示模块。-->
-      <!--                        </p>-->
-      <!--                        <p>主要负责根据设计稿<hei>还原</hei>页面，购物车板块<hei>API</hei>接入、我的页面数据显示、登录模块的逻辑<hei>检验</hei>及错误显示。-->
-      <!--                        </p>-->
-      <!--                    </li> &ndash;&gt;-->
-      <!--            &lt;!&ndash; <li>-->
-      <!--                        <header>-->
-      <!--                            <h3>皮卡丘</h3>-->
-      <!--                            <span class="spans">-->
-      <!--                                <a href="https://gitee.com/liangjinjun/Pikachu" target="view_window">源码链接</a>-->
-      <!--                                <a href="http://liangjinjun.gitee.io/pikachu/text.html" target="view_window">项目预览</a>-->
-      <!--                            </span>-->
-      <!--                        </header>-->
-      <!--                        <p>该项目实现-->
-      <!--                            <hei class="hei">原生JavaScript</hei>-->
-      <!--                            +-->
-      <!--                            <hei>css</hei>-->
-      <!--                            的在网页中-->
-      <!--                            <hei>展现</hei>-->
-      <!--                            出皮卡丘的效果-->
-      <!--                        </p>-->
-      <!--                        <p>所有功能均使用原生-->
-      <!--                            <hei>JavaScript</hei>实现。如：<hei>绘画</hei>、<hei>暂停/播放</hei>、<hei>倍数调整</hei>、<hei>重新初始化项目</hei>-->
-      <!--                        </p>-->
-      <!--                    </li> &ndash;&gt;-->
-
-      <!--            &lt;!&ndash; <li>-->
-      <!--                        <header>-->
-      <!--                            <h3>3D 旋转</h3>-->
-      <!--                            <span class="spans">-->
-      <!--                                <a href="https://gitee.com/liangjinjun/pure_css__3d_rotation"target="view_window">源码链接</a>-->
-      <!--                                <a href="http://liangjinjun.gitee.io/pure_css__3d_rotation"target="view_window">项目预览</a>-->
-      <!--                            </span>-->
-      <!--                        </header>-->
-      <!--                        <p>一个纯<strong>CSS</strong> 实现盒子3D的旋转效果</p>-->
-      <!--                        <p>所有子元素在3D空间中呈现,元素距离视图的距离，以像素计。-->
-      <!--                            也就是我们所说的能使容器具有透视效果的一个属性，值越大，它距离我们眼睛的距离就越近</p>-->
-      <!--                    </li> &ndash;&gt;-->
-
-      <!--            <li>-->
-      <!--              <header>-->
-      <!--                <h3>学术</h3>-->
-      <!--                &lt;!&ndash;                            <span class="spans">&ndash;&gt;-->
-      <!--                &lt;!&ndash;                                <a href="https://gitee.com/liangjinjun/vue-academic" target="view_window">源码链接</a>&ndash;&gt;-->
-      <!--                &lt;!&ndash;                                <a href="http://www.minil.com.cn/" target="view_window">项目预览</a>&ndash;&gt;-->
-      <!--                &lt;!&ndash;                            </span>&ndash;&gt;-->
-      <!--              </header>-->
-      <!--              <p class="p_dian">-->
-      <!--                <span class="h3_span">项目介绍：</span>-->
-      <!--                是一个基于PC端原生<hei>Vue</hei>开发的简易快捷的会议投稿系统-->
-      <!--              </p>-->
-      <!--              <p class="p_dian">-->
-      <!--                <span class="h3_span">工作内容：</span>-->
-      <!--                负责前端页面展示，<hei>用户登录</hei>、<hei>用户投稿</hei>、<hei>用户回执</hei>、<hei>文件上传</hei>、<hei-->
-      <!--                  >个人信息</hei-->
-      <!--                >-->
-      <!--                和后台管理系统的实现，以及后续BUG修复以及项目更新迭代-->
-      <!--              </p>-->
-      <!--              <p class="p_dian">-->
-      <!--                <span class="h3_span">技术栈：</span>-->
-      <!--                <hei>Vue</hei>-->
-      <!--              </p>-->
-      <!--            </li>-->
-      <!--            <br />-->
-      <!--            <li>-->
-      <!--              <header>-->
-      <!--                <h3>重庆定制家居门博会</h3>-->
-      <!--                &lt;!&ndash;                            <span class="spans">&ndash;&gt;-->
-      <!--                &lt;!&ndash;                                <a href="https://gitee.com/liangjinjun/vue-h5" target="view_window">源码链接</a>&ndash;&gt;-->
-      <!--                &lt;!&ndash;                                <a href="http://zt.jizui.top/#/index" target="view_window">项目预览</a>&ndash;&gt;-->
-      <!--                &lt;!&ndash;                            </span>&ndash;&gt;-->
-      <!--              </header>-->
-      <!--              <p class="p_dian">-->
-      <!--                <span class="h3_span">项目内容：</span>-->
-      <!--                是一个基于h5开发的展会登记-->
-      <!--              </p>-->
-      <!--              <p class="p_dian">-->
-      <!--                <span class="h3_span">工作内容：</span>-->
-      <!--                负责前端页面展示， <hei>用户个人信息</hei> 、-->
-      <!--                <hei>身份证验证</hei> 、-->
-      <!--                <hei>报名查询等功能</hei> ，以及后续BUG修复以及项目更新迭代-->
-      <!--              </p>-->
-      <!--              <p class="p_dian">-->
-      <!--                <span class="h3_span">技术栈：</span>-->
-      <!--                <hei>Vue</hei>+<hei>Vant</hei>-->
-      <!--              </p>-->
-      <!--            </li>-->
-      <!--            &lt;!&ndash;                    <li>&ndash;&gt;-->
-      <!--            &lt;!&ndash;                        <header>&ndash;&gt;-->
-      <!--            &lt;!&ndash;                            <h3>都市小书虫阅读</h3>&ndash;&gt;-->
-      <!--            &lt;!&ndash;                        </header>&ndash;&gt;-->
-      <!--            &lt;!&ndash;                        <p>是一个基于&ndash;&gt;-->
-      <!--            &lt;!&ndash;                            <hei>Vue+vux</hei>&ndash;&gt;-->
-      <!--            &lt;!&ndash;                            开发的&ndash;&gt;-->
-      <!--            &lt;!&ndash;                            <hei>微信公众号</hei>&ndash;&gt;-->
-      <!--            &lt;!&ndash;                            h5的订阅商城&ndash;&gt;-->
-      <!--            &lt;!&ndash;                        </p>&ndash;&gt;-->
-      <!--            &lt;!&ndash;                        <p>负责我的模块&ndash;&gt;-->
-      <!--            &lt;!&ndash;                            <hei>地址管理</hei>&ndash;&gt;-->
-      <!--            &lt;!&ndash;                            、&ndash;&gt;-->
-      <!--            &lt;!&ndash;                            <hei>我的收藏</hei>&ndash;&gt;-->
-      <!--            &lt;!&ndash;                            、&ndash;&gt;-->
-      <!--            &lt;!&ndash;                            <hei>订阅中以及订阅完成</hei>&ndash;&gt;-->
-      <!--            &lt;!&ndash;                            以及后续BUG修复及项目更新迭代&ndash;&gt;-->
-      <!--            &lt;!&ndash;                        </p>&ndash;&gt;-->
-      <!--            &lt;!&ndash;                    </li>&ndash;&gt;-->
-      <!--            <li>-->
-      <!--              <header>-->
-      <!--                <h3>影视会员充值网 UniApp</h3>-->
-      <!--              </header>-->
-      <!--              <p class="p_dian">-->
-      <!--                <span class="h3_span">工作内容：</span>-->
-      <!--                是一个基于微信小程序的影视会员充值平台-->
-      <!--              </p>-->
-      <!--              <p class="p_dian">-->
-      <!--                <span class="h3_span">工作内容：</span>-->
-      <!--                主要负责<hei>我的</hei>模块 <hei>登录</hei>模块<hei> 首页</hei-->
-      <!--                >模块-->
-      <!--              </p>-->
-      <!--              <p class="p_dian">-->
-      <!--                <span class="h3_span">技术栈：</span>-->
-      <!--                <hei>UniApp</hei>+<hei>uView</hei>+<hei>TypeScript</hei>-->
-      <!--              </p>-->
-      <!--            </li>-->
-      <!--          </ol>-->
-      <!--        </div>-->
-      <!--      </section>-->
 
       <section>
         <h1 class="f-w-900 f-s-18 m-b-20">教育经历</h1>
