@@ -24,24 +24,25 @@ option = {
         center: ['50%', '50%'],
         data: [{
                 value: 880,
-                name: 'PC/H5'
+                name: 'Vue'
             },
             {
-                value: 900,
-                name: 'Vue'
+                value: 300,
+                name: 'React'
+            },
+            {
+                value: 850,
+                name: 'UniApp'
+            },
+              {
+                value: 830,
+                name: '组件封装/复用性'
             },
             {
                 value: 850,
                 name: 'UI组件库'
             },
-            {
-                value: 850,
-                name: '小程序'
-            },
-            {
-                value: 830,
-                name: 'AJAX'
-            }
+
         ],
         emphasis: {
             itemStyle: {
