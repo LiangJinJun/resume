@@ -101,6 +101,10 @@ hei {
   /* display: initial; */
 }
 
+ .projects > .ols > li > header > .finally {
+    text-align: right !important;
+  }
+
 .time > p {
   display: flex;
   flex-wrap: wrap;
@@ -399,6 +403,7 @@ hei {
   .projects > .ols > li > header > .spans {
     text-align: left;
   }
+
 
   @media screen and (max-width: 385px) {
     .time > p:first-child {
