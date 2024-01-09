@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "start": "node ./script/deploy.js"
+  },
   "dependencies": {
     "prettier": "^2.8.3"
   },
